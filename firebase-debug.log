@@ -1,0 +1,129 @@
+[debug] [2025-12-11T08:18:03.069Z] ----------------------------------------------------------------------
+[debug] [2025-12-11T08:18:03.073Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Артур\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-12-11T08:18:03.073Z] CLI Version:   15.0.0
+[debug] [2025-12-11T08:18:03.073Z] Platform:      win32
+[debug] [2025-12-11T08:18:03.073Z] Node Version:  v24.11.1
+[debug] [2025-12-11T08:18:03.073Z] Time:          Thu Dec 11 2025 11:18:03 GMT+0300 (Москва, стандартное время)
+[debug] [2025-12-11T08:18:03.073Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-11T08:18:05.944Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-11T08:18:05.944Z] > authorizing via signed-in user (supquap@gmail.com)
+[debug] [2025-12-11T08:18:05.945Z] [iam] checking project maxminiapp for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-12-11T08:18:05.947Z] Checked if tokens are valid: true, expires at: 1765444268668
+[debug] [2025-12-11T08:18:05.947Z] Checked if tokens are valid: true, expires at: 1765444268668
+[debug] [2025-12-11T08:18:05.948Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions [none]
+[debug] [2025-12-11T08:18:05.948Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions x-goog-quota-user=projects/maxminiapp
+[debug] [2025-12-11T08:18:05.948Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-11T08:18:06.911Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions 200
+[debug] [2025-12-11T08:18:06.911Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-11T08:18:06.911Z] Checked if tokens are valid: true, expires at: 1765444268668
+[debug] [2025-12-11T08:18:06.911Z] Checked if tokens are valid: true, expires at: 1765444268668
+[debug] [2025-12-11T08:18:06.912Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp [none]
+[debug] [2025-12-11T08:18:07.462Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp 200
+[debug] [2025-12-11T08:18:07.462Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp {"projectId":"maxminiapp","projectNumber":"888764698304","displayName":"MaxMiniApp","name":"projects/maxminiapp","resources":{"hostingSite":"maxminiapp"},"state":"ACTIVE","etag":"1_637b1ebc-6050-46e1-a510-98f092341836"}
+[info] 
+[info] === Deploying to 'maxminiapp'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-12-11T08:18:07.468Z] Checked if tokens are valid: true, expires at: 1765444268668
+[debug] [2025-12-11T08:18:07.468Z] Checked if tokens are valid: true, expires at: 1765444268668
+[debug] [2025-12-11T08:18:07.469Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions [none]
+[debug] [2025-12-11T08:18:07.469Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-12-11T08:18:08.713Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions 500
+[debug] [2025-12-11T08:18:08.713Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: Request to https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions had HTTP Error: 500, Internal error encountered.
+[debug] [2025-12-11T08:18:08.863Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2025-12-11T08:23:00.363Z] ----------------------------------------------------------------------
+[debug] [2025-12-11T08:23:00.366Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Артур\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-12-11T08:23:00.366Z] CLI Version:   12.9.1
+[debug] [2025-12-11T08:23:00.366Z] Platform:      win32
+[debug] [2025-12-11T08:23:00.366Z] Node Version:  v24.11.1
+[debug] [2025-12-11T08:23:00.367Z] Time:          Thu Dec 11 2025 11:23:00 GMT+0300 (Москва, стандартное время)
+[debug] [2025-12-11T08:23:00.367Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-11T08:23:00.455Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-11T08:23:00.456Z] > authorizing via signed-in user (supquap@gmail.com)
+[debug] [2025-12-11T08:23:00.456Z] [iam] checking project maxminiapp for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-12-11T08:23:00.459Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions [none]
+[debug] [2025-12-11T08:23:00.460Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions x-goog-quota-user=projects/maxminiapp
+[debug] [2025-12-11T08:23:00.460Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-11T08:23:01.475Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions 200
+[debug] [2025-12-11T08:23:01.476Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-11T08:23:01.476Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp [none]
+[debug] [2025-12-11T08:23:01.913Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp 200
+[debug] [2025-12-11T08:23:01.913Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp {"projectId":"maxminiapp","projectNumber":"888764698304","displayName":"MaxMiniApp","name":"projects/maxminiapp","resources":{"hostingSite":"maxminiapp"},"state":"ACTIVE","etag":"1_637b1ebc-6050-46e1-a510-98f092341836"}
+[info] 
+[info] === Deploying to 'maxminiapp'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-12-11T08:23:01.922Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions [none]
+[debug] [2025-12-11T08:23:01.922Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-12-11T08:23:03.155Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions 500
+[debug] [2025-12-11T08:23:03.155Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2025-12-11T08:23:03.194Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2025-12-11T08:29:13.412Z] ----------------------------------------------------------------------
+[debug] [2025-12-11T08:29:13.414Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Артур\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-12-11T08:29:13.415Z] CLI Version:   12.9.1
+[debug] [2025-12-11T08:29:13.415Z] Platform:      win32
+[debug] [2025-12-11T08:29:13.415Z] Node Version:  v24.11.1
+[debug] [2025-12-11T08:29:13.415Z] Time:          Thu Dec 11 2025 11:29:13 GMT+0300 (Москва, стандартное время)
+[debug] [2025-12-11T08:29:13.415Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-11T08:29:13.481Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-11T08:29:13.482Z] > authorizing via signed-in user (supquap@gmail.com)
+[debug] [2025-12-11T08:29:13.482Z] [iam] checking project maxminiapp for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-12-11T08:29:13.485Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions [none]
+[debug] [2025-12-11T08:29:13.486Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions x-goog-quota-user=projects/maxminiapp
+[debug] [2025-12-11T08:29:13.486Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-11T08:29:14.470Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions 200
+[debug] [2025-12-11T08:29:14.470Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/maxminiapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-11T08:29:14.470Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp [none]
+[debug] [2025-12-11T08:29:14.888Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp 200
+[debug] [2025-12-11T08:29:14.889Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/maxminiapp {"projectId":"maxminiapp","projectNumber":"888764698304","displayName":"MaxMiniApp","name":"projects/maxminiapp","resources":{"hostingSite":"maxminiapp"},"state":"ACTIVE","etag":"1_637b1ebc-6050-46e1-a510-98f092341836"}
+[info] 
+[info] === Deploying to 'maxminiapp'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-12-11T08:29:14.895Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions [none]
+[debug] [2025-12-11T08:29:14.895Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-12-11T08:29:16.130Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions 500
+[debug] [2025-12-11T08:29:16.130Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/maxminiapp/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2025-12-11T08:29:16.180Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

@@ -1,0 +1,55 @@
+/* Основные стили страницы и контейнера */
+.app-container {
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+    background-color: #f4f4f9; /* Светлый фон, можно изменить */
+    color: #333;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Стили карточки/блока с данными */
+.data-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Стили заголовка */
+.card-header {
+    color: #007bff; /* Синий цвет для заголовка */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Стили для каждой строки данных */
+.detail-row {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    display: flex; /* Используем flex для выравнивания */
+}
+
+/* Стили для метки (Имя, Фамилия, Телефон) */
+.label {
+    font-weight: bold;
+    display: inline-block;
+    width: 120px; /* Фиксированная ширина для выравнивания */
+    color: #555;
+    flex-shrink: 0; /* Чтобы метка не сжималась */
+}
+
+/* Стили для сообщений */
+.message-loading {
+    color: #007bff;
+    font-style: italic;
+}
+
+.message-error {
+    color: red;
+    font-weight: bold;
+}
